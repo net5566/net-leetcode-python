@@ -1,2 +1,9 @@
 # net-leetcode-python
-my leetcode solution with Python
+
+## Hello , this is Net's practice of LeetCode with Python 
+
+my leetcode profile :
+https://leetcode.com/net5566/
+
+
+started from Jan. 29, 2017
