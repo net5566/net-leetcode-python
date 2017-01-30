@@ -5,19 +5,18 @@ class Solution(object):
         :rtype: str
         """
         span = []
-        k=len(s)
 
         for i in range(len(s)):
             span.append('\t')
             span.append(s[i])
         span.append('\t')
-        sl = len(span)
+
         head = 0
         tail = 0
         max = 0
-        tmp = 0
-        for i in range(sl):
-            if(max/2+i>sl):
+
+        for i in range(len(span)):
+            if(max/2+i>len(span)):
                 break
             tmp = 0
             x=i
@@ -31,8 +30,8 @@ class Solution(object):
                     break
             if(tmp >= max):
 
-                head = int((x+1)/2)
-                tail = int((y-1)/2)
+                head = (x+1)/2
+                tail = (y-1)/2
                 max = tmp
 
         return s[head:tail]
